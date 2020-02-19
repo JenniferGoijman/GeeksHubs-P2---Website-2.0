@@ -1,0 +1,155 @@
+* {
+    margin: 0% 3% 0% 3%;
+}
+
+body {
+    background-color: rgb(216, 216, 216);
+    font-size: 18px;
+    /*font-family: 'Didact Gothic', sans-serif;*/
+    font-family: 'Carrois Gothic SC', sans-serif;
+    height: 70vh;
+    margin-top: 50px;
+    min-width: 560px;
+}
+
+#boxGeneral {
+    border: 1px solid rgb(177, 177, 177);
+    float: center;;
+}
+
+#boxGeneralito {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(56, 187, 106);
+    height: 30px;
+}
+
+#box1, #box2 {
+    /*border: 1px solid black;*/
+    width: 60%;
+    margin-bottom: 5px;
+}
+#box1{
+    justify-content: flex-start;
+}
+#box2{
+    justify-content: flex-end;
+}
+#box1 p{
+    text-align: left;
+    align-content: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.elementoMenu {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementoSkillsV {
+    width: 50px;
+}
+
+.elementoSkillsH {
+    height: 30px;
+}
+
+.elementoMenu:hover {
+    border: 1px solid white;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: honeydew;
+    display: flex;
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 3%;
+}
+
+form{
+    /*margin: 0;*/
+}
+
+input,
+textarea {
+    /*display: flex;
+    justify-content: right;*/
+    font-family: 'Carrois Gothic SC', sans-serif;
+    width: 200px;
+    padding: 0px;
+    border: 1px;
+}
+
+input[type="submit"]{
+    width: 75px;
+    height: 22px;
+    text-align: center;
+    display: initial;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: 0%;
+    margin-bottom: 5px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.elementoSocial {
+    width: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+.elementoSocial:hover {
+    opacity: 0.5;
+}
