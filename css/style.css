@@ -1,25 +1,35 @@
 * {
     margin: 0% 3% 0% 3%;
 }
+html {
+    height: 100%;
+    margin: 0;
+}
 
 body {
     background-color: rgb(216, 216, 216);
     font-size: 18px;
-    /*font-family: 'Didact Gothic', sans-serif;*/
     font-family: 'Carrois Gothic SC', sans-serif;
-    height: 70vh;
-    margin-top: 50px;
-    min-width: 560px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #boxGeneral {
     border: 1px solid rgb(177, 177, 177);
-    float: center;;
+    width: 715px;
+    height: 462px;
 }
 
 #boxGeneralito {
     display: flex;
     justify-content: space-between;
+}
+
+p{
+    max-width: 500px;
 }
 
 header {
@@ -39,24 +49,9 @@ nav {
     height: 30px;
 }
 
-#box1, #box2 {
-    /*border: 1px solid black;*/
-    width: 60%;
-    margin-bottom: 5px;
-}
-#box1{
-    justify-content: flex-start;
-}
-#box2{
-    justify-content: flex-end;
-}
-#box1 p{
-    text-align: left;
-    align-content: center;
-}
-
 .menu {
     display: flex;
+    justify-content: center;
 }
 
 .elementoMenu {
@@ -66,10 +61,32 @@ nav {
     justify-content: center;
 }
 
+.elementoMenu:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: honeydew;
+    display: flex;
+    text-align: center;
+}
+
+.fotoCV {
+    width: 150px;
+    float: right;
+    margin-top: 45px;
+    margin-right: 60px;
+    border-radius: 100px;
+    border: 2px solid rgb(56, 187, 106);
+}
+
 .skills {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .elementoSkillsV {
@@ -77,50 +94,32 @@ nav {
 }
 
 .elementoSkillsH {
-    height: 30px;
+    width: 80px;
 }
 
-.elementoMenu:hover {
-    border: 1px solid white;
+.elementoSkillsV:hover, .elementoSkillsH:hover {
+    opacity: 0.5;
 }
 
-p {
-    text-align: justify;
+#box1,
+#box2 {
+    /*border: 1px solid black;*/
+    margin: 0 0 5px 0;
 }
 
-a {
-    text-decoration: none;
-    color: honeydew;
-    display: flex;
-    align-self: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 3%;
-}
-
-form{
-    /*margin: 0;*/
+#box1 {
+    padding-right: 15px;
 }
 
 input,
 textarea {
-    /*display: flex;
-    justify-content: right;*/
+    display: flex;
+    justify-content: flex-end;
     font-family: 'Carrois Gothic SC', sans-serif;
-    width: 200px;
+    font-size: 18px;
+    width: 250px;
     padding: 0px;
-    border: 1px;
-}
-
-input[type="submit"]{
-    width: 75px;
-    height: 22px;
-    text-align: center;
-    display: initial;
+    border: 0px;
 }
 
 textarea {
@@ -129,15 +128,24 @@ textarea {
 
 label {
     width: 100px;
-    text-align: right;
+    margin: 0 0 5px 0;
+}
+
+input[type="submit"] {
+    width: 100px;
+    justify-content: center;
 }
 
 .datos {
     display: flex;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+}
+
+.datos2 {
+    display: flex;
     justify-content: flex-end;
-    align-content: center;
-    margin-right: 0%;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 .social {
@@ -152,4 +160,11 @@ label {
 
 .elementoSocial:hover {
     opacity: 0.5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 3%;
 }
