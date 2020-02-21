@@ -50,16 +50,15 @@ nav {
     height: 30px;
 }
 
-.menu {
+div.menu {
     display: flex;
-    justify-content: center;
 }
 
 .elementoMenu {
-    width: 150px;
+    width: 120px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .elementoMenu:hover {
@@ -72,6 +71,7 @@ nav {
     color: honeydew;
     display: flex;
     text-align: center;
+    margin: 0;
 }
 
 .fotoCV {
