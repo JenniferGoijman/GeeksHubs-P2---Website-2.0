@@ -134,7 +134,6 @@ div.menu {
     margin-right: 20px;
 }
 
-
 input,
 textarea {
     display: flex;
@@ -189,9 +188,9 @@ input[type="submit"] {
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    height: 50px;
-    align-items: flex-end;
+    /*margin-top: 10px;*/
+    height: 88px;
+    align-items: center;
 }
 
 #edu {
