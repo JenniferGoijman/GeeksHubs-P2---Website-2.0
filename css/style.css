@@ -21,12 +21,12 @@ body {
 #boxGeneral {
     border: 1px solid rgb(177, 177, 177);
     width: 715px;
-    height: 462px;
+    min-height: 300px;
 }
 
 #boxGeneralito {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*alinea foto*/
 }
 
 p {
@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: rgb(56, 187, 106);
-    height: 30px;
+    min-height: 30px;
 }
 
 div.menu {
@@ -74,7 +74,11 @@ div.menu {
     text-align: center;
     margin: 0;
 }
-
+@media (max-width: 600px){
+    div.menu {
+        flex-direction: column;
+    }
+}
 .skills {
     display: flex;
     align-items: center;
