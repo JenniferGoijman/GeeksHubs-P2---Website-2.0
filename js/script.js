@@ -29,24 +29,23 @@ const Inicio = `<div id="boxGeneralito">
                 </div>`;
 const SobreMi = `<div id="boxGeneralitoSobreMi">
                 <div id="boxSobreMi1">
-                    <p>Me defino como una persona práctica, organizada y versátil. Me gusta trabajar en equipo, adquirir
-                        nuevos conocimientos y desafiarme constantemente. </p><br>
+                    <p>Me defino como una persona práctica, organizada y versátil. Me gusta trabajar en equipo, 
+                        adquirir nuevos conocimientos y desafiarme constantemente. </p><br>
                 </div>
                 <div id="boxSobreMi2">
-                    <p>Luego de terminar el <a href="https://www.ort.edu.ar/" id="edu">Bachillerato con orientación en
-                            Informática</a>, obtuve la <a href="http://www.uba.ar/" id="edu">Licenciatura en Psicología</a>
-                        mientras me desenvolvía profesionalmente en el mundo IT.</p><br>
+                    <p>Luego de terminar el <a href="https://www.ort.edu.ar/" id="edu">Bachillerato con orientación 
+                    en Informática</a>, obtuve la <a href="http://www.uba.ar/" id="edu">Licenciatura en Psicología</a> 
+                    mientras me desenvolvía profesionalmente en el mundo IT.</p><br>
                 </div>
                 <div id="boxSobreMi3">
                     <p>En el último año estuve trabajando en diferentes países de Europa en el área de servicio, lo que me
-                        permitió desarrollar mi flexibilidad, mejorar mi fluidez en inglés y motivarme a estudiar alemán.
-                    </p><br>
+                        permitió desarrollar mi flexibilidad, mejorar mi fluidez en inglés y motivarme a estudiar alemán. </p><br>
                 </div>
                 <div id="boxSobreMi4">
                     <p>Mi objetivo para el 2020 es reciclarme profesionalmente, es por ello que estoy realizando el Bootcamp
                         Full Stack Developer de GeeksHubs en Madrid. </p>
                 </div>
-</div>`;
+            </div>`;
 const Tecnologias = `<div id="boxTecnologias">
                     <p>Tecnologías utilizadas:</p><br>
                     <div class="skills">
@@ -77,15 +76,15 @@ const Contacto = `<div id="boxGeneralitoContacto">
                             </div>
                             <div class="datos">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="email" class="email" placeholder="Email" required>
                             </div>
                             <div class="datos">
                                 <label for="phone">Teléfono:</label>
-                                <input type="tel" name="phone" placeholder="Teléfono" required>
+                                <input type="tel" class="phone" placeholder="Teléfono" required>
                             </div>
                             <div class="datos">
                                 <label for="message">Mensaje:</label>
-                                <textarea name="message" rows="5" placeholder="Mensaje"></textarea>
+                                <textarea class="message" rows="5" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="datos2">
                                 <input type="submit" id="aceptar" value="Aceptar">
@@ -95,43 +94,45 @@ const Contacto = `<div id="boxGeneralitoContacto">
                     </div>`;
 
 const main = document.querySelector('main');
-window.addEventListener('load',()=>{
-    if(window.location.hash==='#sobremi'){
-        main.innerHTML = SobreMi
-    }else  if(window.location.hash==='#tecnologias'){
-        main.innerHTML = Tecnologias
-    }else  if(window.location.hash==='#contacto'){
-        main.innerHTML = Contacto
-    }else{
-        main.innerHTML = Inicio
-    }
-})
+if (window.location.hash === '#sobremi') {
+    main.innerHTML = SobreMi
+} else if (window.location.hash === '#tecnologias') {
+    main.innerHTML = Tecnologias
+} else if (window.location.hash === '#contacto') {
+    main.innerHTML = Contacto
+} else {
+    main.innerHTML = Inicio
+}
 
-document.querySelector('#botonInicio').addEventListener('click', ()=>{
+document.querySelector('#botonInicio').addEventListener('click', () => {
     main.innerHTML = Inicio;
-    history.pushState({},'','#');
+    history.pushState({}, '', '#');
 });
-document.querySelector('#botonSobreMi').addEventListener('click',()=>{
+document.querySelector('#botonSobreMi').addEventListener('click', () => {
     main.innerHTML = SobreMi;
-    history.pushState({},'','#sobremi');
+    history.pushState({}, '', '#sobremi');
 })
-document.querySelector('#botonTecnologias').addEventListener('click',()=>{
+document.querySelector('#botonTecnologias').addEventListener('click', () => {
     main.innerHTML = Tecnologias;
-    history.pushState({},'','#tecnologias');
+    history.pushState({}, '', '#tecnologias');
 })
-document.querySelector('#botonContacto').addEventListener('click',()=>{
+document.querySelector('#botonContacto').addEventListener('click', () => {
     main.innerHTML = Contacto;
-    history.pushState({},'','#contacto');
+    history.pushState({}, '', '#contacto');
 })
 
+let contacto = {
+    nombre: '',
+    mail: '',
+    telefono: '',
+    mensaje: ''
+}
 
-//CAMBIAR ESTO
-//SI APRIETA BOTON ACEPTAR, GUARDAR PERSONA.NOMBRE, PERSONA.EMAIL, PERSONA.TELEFONO, PERSONA.MENSAJE.
-/*var usernameInput = document.querySelector('.username'); 
-var textoUsuario = document.querySelector('#textoUsuario');
-usernameInput.addEventListener('keyup', function (event) {
-    usuario.username = event.target.value;
-    textoUsuario.innerHTML = event.target.value; //el innerHTML es para meter texto 
-})
-
-console.log(usuario);*/
+document.getElementById('aceptar').addEventListener('click', function () {
+    contacto.nombre = document.querySelector('.name').value;
+    contacto.mail = document.querySelector('.email').value;
+    contacto.telefono = document.querySelector('.phone').value;
+    contacto.mensaje = document.querySelector('.message').value;
+    console.log(contacto);
+    alert(contacto.nombre + "|" + contacto.mail + "|" + contacto.telefono + ". He recibido tu mensaje: \"" + contacto.mensaje);
+});
