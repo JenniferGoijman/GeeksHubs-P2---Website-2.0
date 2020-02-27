@@ -27,18 +27,22 @@ const Inicio = `<div id="boxGeneralito">
                     <br>
                     <br>
                 </div>`;
-const SobreMi = `<div id="boxGeneralito">
-                <div id="box1">
+const SobreMi = `<div id="boxGeneralitoSobreMi">
+                <div id="boxSobreMi1">
                     <p>Me defino como una persona práctica, organizada y versátil. Me gusta trabajar en equipo, adquirir
-                        nuevos conocimientos y desafiarme constantemente. </p><br><br>
+                        nuevos conocimientos y desafiarme constantemente. </p><br>
+                </div>
+                <div id="boxSobreMi2">
                     <p>Luego de terminar el <a href="https://www.ort.edu.ar/" id="edu">Bachillerato con orientación en
                             Informática</a>, obtuve la <a href="http://www.uba.ar/" id="edu">Licenciatura en Psicología</a>
-                        mientras me desenvolvía profesionalmente en el mundo IT.</p>
+                        mientras me desenvolvía profesionalmente en el mundo IT.</p><br>
                 </div>
-                <div id="box2">
+                <div id="boxSobreMi3">
                     <p>En el último año estuve trabajando en diferentes países de Europa en el área de servicio, lo que me
                         permitió desarrollar mi flexibilidad, mejorar mi fluidez en inglés y motivarme a estudiar alemán.
                     </p><br>
+                </div>
+                <div id="boxSobreMi4">
                     <p>Mi objetivo para el 2020 es reciclarme profesionalmente, es por ello que estoy realizando el Bootcamp
                         Full Stack Developer de GeeksHubs en Madrid. </p>
                 </div>
@@ -61,9 +65,9 @@ const Tecnologias = `<div id="boxTecnologias">
                         <a href="https://nodejs.org/es/" target="_blank"><img class="elementoSkillsV" src="../img/nodejs.png" alt="Logo NodeJS"></a>
                         </div>
                         </div>`;
-const Contacto = `<div id="boxGeneralito">
+const Contacto = `<div id="boxGeneralitoContacto">
                     <div id="box1">
-                        <p>Puedes ponerte en contacto completando el formulario a tu derecha y responderé a la brevedad.</p>
+                        <p>Puedes ponerte en contacto completando el siguiente formulario y responderé a la brevedad.</p>
                     </div>
                     <div id="box2">
                         <form action="">

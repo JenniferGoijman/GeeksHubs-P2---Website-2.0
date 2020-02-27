@@ -74,10 +74,59 @@ div.menu {
     text-align: center;
     margin: 0;
 }
-@media (max-width: 600px){
+@media (max-width: 550px){
+    body {
+        align-items: flex-start;
+    }
+    h1 {
+        display: flex;
+        margin-left: 50px;    
+    }
+    nav {
+        margin: 0;
+        padding: 0;
+        
+    }
     div.menu {
         flex-direction: column;
     }
+    img.fotoCV {
+        width: 100px;
+        height: 100px;        
+        margin: 0;
+        padding: 0;
+    }
+    div.inicio {
+        font-size: 13px;
+    }
+    div#box1Inicio {
+        margin-left: 15%;
+    }
+    div#box2Inicio {
+        margin: 0;
+        padding: 0;
+    }
+    div#boxGeneralitoSobreMi {
+        display: grid;
+    }
+    div#boxGeneralito p {
+        font-size: 11px;
+    }
+    div#boxGeneralitoContacto {
+        display: grid;
+    }
+    label,
+    div.datos input,
+    div.datos textarea,
+    div.datos2 input {
+        font-size: 13px;
+        margin: 0;
+        width: auto;
+    }
+    div.datos {
+        display: grid;
+    }
+    
 }
 .skills {
     display: flex;
@@ -111,6 +160,18 @@ div.menu {
     flex-direction: column;
     justify-content: center;
     width: 300px;
+}
+
+#boxGeneralitoSobreMi {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#boxSobreMi1,
+#boxSobreMi2,
+#boxSobreMi3,
+#boxSobreMi4 {
+    margin: 0 0 5px 0;
 }
 
 #box2Inicio {
