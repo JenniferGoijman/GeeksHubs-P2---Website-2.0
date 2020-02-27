@@ -1,23 +1,23 @@
 const Inicio = `<div id="boxGeneralito">
                     <div id="box1Inicio">
                         <div class="inicio">
-                            <img src="/img/name.png" alt="Icono Nombre" class="elementoInicio">
+                            <img src="../img/name.png" alt="Icono Nombre" class="elementoInicio">
                             Jennifer Judith Goijman
                             </div>
                         <div class="inicio">
-                            <img src="/img/pastel.png" alt="Nombre" class="elementoInicio">
+                            <img src="../img/pastel.png" alt="Nombre" class="elementoInicio">
                             30 de agosto de 1991
                             </div>
                         <div class="inicio">
-                            <img src="/img/phone.png" alt="Telefono" class="elementoInicio">
+                            <img src="../img/phone.png" alt="Telefono" class="elementoInicio">
                             +346449433349
                             </div>
                         <div class="inicio">
-                            <img src="/img/location.png" alt="Ubicación" class="elementoInicio">
+                            <img src="../img/location.png" alt="Ubicación" class="elementoInicio">
                             Madrid, España
                             </div>
                         <div class="inicio">
-                            <img src="/img/mail.png" alt="Email" class="elementoInicio">
+                            <img src="../img/mail.png" alt="Email" class="elementoInicio">
                             jgoijman@gmail.com
                             </div>
                     </div>
@@ -46,19 +46,19 @@ const SobreMi = `<div id="boxGeneralito">
 const Tecnologias = `<div id="boxTecnologias">
                     <p>Tecnologías utilizadas:</p><br>
                     <div class="skills">
-                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="/img/html.png" alt="Logo HTML5"></a>
-                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="/img/css.png" alt="Logo CSS3"></a>
-                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="/img/js.png" alt="Logo JS"></a>
-                        <a href="https://git-scm.com/" target="_blank"><img class="elementoSkillsV" src="/img/git.png" alt="Logo Git"></a>
-                        <a href="https://es.reactjs.org/" target="_blank"><img class="elementoSkillsV" src="/img/react.png" alt="Logo React"></a>
-                        <a href="https://angular.io/" target="_blank"><img class="elementoSkillsV" src="/img/angular.png" alt="Logo Angular"></a>
-                        <a href="https://www.mysql.com/" target="_blank"><img class="elementoSkillsV" src="/img/mysql.png" alt="Logo MySQL"></a>
-                        <a href="https://www.mongodb.com/es" target="_blank"><img class="elementoSkillsH" src="/img/mongo.png" alt="Logo MongoDB"></a>
-                        <a href="https://laravel.com/" target="_blank"><img class="elementoSkillsV" src="/img/laravel.png" alt="Logo Laravel"></a>
-                        <a href="https://www.php.net/" target="_blank"><img class="elementoSkillsH" src="/img/php.png" alt="Logo PHP"></a>
-                        <a href="https://jquery.com/" target="_blank"><img class="elementoSkillsV" src="/img/jquery.png" alt="Logo jQuery"></a>
-                        <a href="https://www.typescriptlang.org/" target="_blank"><img class="elementoSkillsV" src="/img/typescript.png" alt="Logo TypeScript"></a>
-                        <a href="https://nodejs.org/es/" target="_blank"><img class="elementoSkillsV" src="/img/nodejs.png" alt="Logo NodeJS"></a>
+                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="../img/html.png" alt="Logo HTML5"></a>
+                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="../img/css.png" alt="Logo CSS3"></a>
+                        <a href="https://www.w3.org/" target="_blank"><img class="elementoSkillsV" src="../img/js.png" alt="Logo JS"></a>
+                        <a href="https://git-scm.com/" target="_blank"><img class="elementoSkillsV" src="../img/git.png" alt="Logo Git"></a>
+                        <a href="https://es.reactjs.org/" target="_blank"><img class="elementoSkillsV" src="../img/react.png" alt="Logo React"></a>
+                        <a href="https://angular.io/" target="_blank"><img class="elementoSkillsV" src="../img/angular.png" alt="Logo Angular"></a>
+                        <a href="https://www.mysql.com/" target="_blank"><img class="elementoSkillsV" src="../img/mysql.png" alt="Logo MySQL"></a>
+                        <a href="https://www.mongodb.com/es" target="_blank"><img class="elementoSkillsH" src="../img/mongo.png" alt="Logo MongoDB"></a>
+                        <a href="https://laravel.com/" target="_blank"><img class="elementoSkillsV" src="../img/laravel.png" alt="Logo Laravel"></a>
+                        <a href="https://www.php.net/" target="_blank"><img class="elementoSkillsH" src="../img/php.png" alt="Logo PHP"></a>
+                        <a href="https://jquery.com/" target="_blank"><img class="elementoSkillsV" src="../img/jquery.png" alt="Logo jQuery"></a>
+                        <a href="https://www.typescriptlang.org/" target="_blank"><img class="elementoSkillsV" src="../img/typescript.png" alt="Logo TypeScript"></a>
+                        <a href="https://nodejs.org/es/" target="_blank"><img class="elementoSkillsV" src="../img/nodejs.png" alt="Logo NodeJS"></a>
                         </div>
                         </div>`;
 const Contacto = `<div id="boxGeneralito">
