@@ -24,7 +24,7 @@ body {
     min-height: 300px;
 }
 
-#boxGeneralito {
+#boxGeneralito, #boxGeneralitoContacto {
     display: flex;
     justify-content: space-between; /*alinea foto*/
 }
@@ -80,27 +80,30 @@ div.menu {
     }
     h1 {
         display: flex;
-        margin-left: 50px;    
+        margin-left: 10%;    
     }
     nav {
         margin: 0;
         padding: 0;
-        
     }
     div.menu {
         flex-direction: column;
     }
     img.fotoCV {
         width: 100px;
-        height: 100px;        
+        height: 100px;
         margin: 0;
-        padding: 0;
     }
     div.inicio {
         font-size: 13px;
     }
     div#box1Inicio {
-        margin-left: 15%;
+        width: auto;
+        margin: 0;      
+        
+    }
+    div#boxGeneralito {
+        margin: 0;
     }
     div#box2Inicio {
         margin: 0;
@@ -108,9 +111,10 @@ div.menu {
     }
     div#boxGeneralitoSobreMi {
         display: grid;
+        margin: 0 1% 0 1%;
     }
-    div#boxGeneralito p {
-        font-size: 11px;
+    p {
+        font-size: 12px;
     }
     div#boxGeneralitoContacto {
         display: grid;
@@ -121,12 +125,22 @@ div.menu {
     div.datos2 input {
         font-size: 13px;
         margin: 0;
-        width: auto;
+    }
+    div#box2 {
+        justify-items: center;
     }
     div.datos {
         display: grid;
     }
-    
+    div.datos2 {
+        justify-content: flex-start;
+    }
+    img.elementoInicio {
+        height: 20px;
+        padding: 0;
+        margin-bottom: 5px;*/
+    }
+        
 }
 .skills {
     display: flex;
@@ -164,7 +178,7 @@ div.menu {
 
 #boxGeneralitoSobreMi {
     display: flex;
-    justify-content: space-between; 
+    flex-wrap: wrap;
 }
 
 #boxSobreMi1,
@@ -172,6 +186,7 @@ div.menu {
 #boxSobreMi3,
 #boxSobreMi4 {
     margin: 0 0 5px 0;
+    max-width: 300px;
 }
 
 #box2Inicio {
@@ -253,7 +268,6 @@ input[type="submit"] {
 footer {
     display: flex;
     justify-content: center;
-    /*margin-top: 10px;*/
     height: 88px;
     align-items: center;
 }
