@@ -30,6 +30,10 @@ body {
     padding: 10px 0 0 10px;
 }
 
+#boxTecnologias {
+    padding: 10px 0 0 10px;
+}
+
 p {
     max-width: 500px;
     font-size: 16px;
@@ -86,7 +90,7 @@ div.menu {
         display: flex;
         margin-left: 10%;    
         font-size: 30px;
-        margin: 0 0 5px 0;
+        margin: 0;
     }
     nav {
         margin: 0;
@@ -106,14 +110,12 @@ div.menu {
         margin: 0;
     }
     div#box1Inicio {
-        width: auto;
-        margin: 0;      
-        
+        margin: 0;
     }
     div#boxGeneral {
         border: 0;
         margin: 0;
-        width: 100;
+        width: 100%;
         min-height: auto;
     }
     div#boxGeneralito {
@@ -125,7 +127,7 @@ div.menu {
     }
     div#boxGeneralitoSobreMi {
         display: grid;
-        margin: 0 1% 0 1%;
+        margin: 0;
     }
     p {
         font-size: 13px;
@@ -193,6 +195,7 @@ div.menu {
 #boxGeneralitoSobreMi {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0 0 10px;
 }
 
 #boxSobreMi1,
