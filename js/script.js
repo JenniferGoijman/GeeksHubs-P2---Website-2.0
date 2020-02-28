@@ -1,3 +1,10 @@
+const contacto = {
+    nombre: '',
+    mail: '',
+    telefono: '',
+    mensaje: ''
+}
+
 const Inicio = `<div id="boxGeneralito">
                     <div id="box1Inicio">
                         <div class="inicio">
@@ -91,13 +98,22 @@ const Contacto = `<div id="boxGeneralitoContacto">
                     </div>
                     </div>`;
 
+const clickAceptar = function () {
+    contacto.nombre = document.querySelector('.name').value;
+    contacto.mail = document.querySelector('.email').value;
+    contacto.telefono = document.querySelector('.phone').value;
+    contacto.mensaje = document.querySelector('.message').value;
+    console.log(contacto);
+    alert(contacto.nombre + "|" + contacto.mail + "|" + contacto.telefono + ". He recibido tu mensaje: \"" + contacto.mensaje);
+}
 const main = document.querySelector('main');
 if (window.location.hash === '#sobremi') {
     main.innerHTML = SobreMi
 } else if (window.location.hash === '#tecnologias') {
     main.innerHTML = Tecnologias
 } else if (window.location.hash === '#contacto') {
-    main.innerHTML = Contacto
+    main.innerHTML = Contacto;
+    document.getElementById('aceptar').addEventListener('click', clickAceptar);
 } else {
     main.innerHTML = Inicio
 }
@@ -117,20 +133,5 @@ document.querySelector('#botonTecnologias').addEventListener('click', () => {
 document.querySelector('#botonContacto').addEventListener('click', () => {
     main.innerHTML = Contacto;
     history.pushState({}, '', '#contacto');
+    document.getElementById('aceptar').addEventListener('click', clickAceptar);
 })
-
-let contacto = {
-    nombre: '',
-    mail: '',
-    telefono: '',
-    mensaje: ''
-}
-
-document.getElementById('aceptar').addEventListener('click', function () {
-    contacto.nombre = document.querySelector('.name').value;
-    contacto.mail = document.querySelector('.email').value;
-    contacto.telefono = document.querySelector('.phone').value;
-    contacto.mensaje = document.querySelector('.message').value;
-    console.log(contacto);
-    alert(contacto.nombre + "|" + contacto.mail + "|" + contacto.telefono + ". He recibido tu mensaje: \"" + contacto.mensaje);
-});

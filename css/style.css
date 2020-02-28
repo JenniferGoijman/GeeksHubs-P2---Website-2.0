@@ -43,7 +43,7 @@ header {
 }
 
 h1 {
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 nav {
@@ -86,11 +86,12 @@ div.menu {
         display: flex;
         margin-left: 10%;    
         font-size: 30px;
+        margin: 0 0 5px 0;
     }
     nav {
         margin: 0;
         padding: 0;
-        font-size: 16px;
+        font-size: 17px;
     }
     div.menu {
         flex-direction: column;
@@ -127,7 +128,7 @@ div.menu {
         margin: 0 1% 0 1%;
     }
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
     div#boxGeneralitoContacto {
         display: grid;
@@ -136,7 +137,7 @@ div.menu {
     div.datos input,
     div.datos textarea,
     div.datos2 input {
-        font-size: 13px;
+        font-size: 14px;
         margin: 0;
     }
     div#box2 {
