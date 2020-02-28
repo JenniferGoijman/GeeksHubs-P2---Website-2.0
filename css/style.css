@@ -24,9 +24,11 @@ body {
     min-height: 300px;
 }
 
-#boxGeneralito, #boxGeneralitoContacto {
+#boxGeneralito,
+#boxGeneralitoContacto {
     display: flex;
-    justify-content: space-between; /*alinea foto*/
+    justify-content: space-between;
+    /*alinea foto*/
     padding: 10px 0 0 10px;
 }
 
@@ -83,82 +85,6 @@ div.menu {
     margin: 0;
 }
 
-@media (max-width: 550px){
-    body {
-        align-items: flex-start;
-    }
-    h1 {
-        display: flex;
-        margin-left: 10%;    
-        font-size: 30px;
-        margin: 0;
-    }
-    nav {
-        margin: 0;
-        padding: 0;
-        font-size: 17px;
-    }
-    div.menu {
-        flex-direction: column;
-    }
-    img.fotoCV {
-        width: 100px;
-        height: 100px;
-        margin: 0;
-    }
-    div.inicio {
-        font-size: 13px;
-        margin: 0;
-    }
-    div#box1Inicio {
-        margin: 0;
-    }
-    div#boxGeneral {
-        border: 0;
-        margin: 0;
-        width: 100%;
-        min-height: auto;
-    }
-    div#boxGeneralito {
-        margin: 0;
-    }
-    div#box2Inicio {
-        margin: 0;
-        padding: 0;
-    }
-    div#boxGeneralitoSobreMi {
-        display: grid;
-        margin: 0;
-    }
-    p {
-        font-size: 13px;
-    }
-    div#boxGeneralitoContacto {
-        display: grid;
-    }
-    label,
-    div.datos input,
-    div.datos textarea,
-    div.datos2 input {
-        font-size: 14px;
-        margin: 0;
-    }
-    div#box2 {
-        justify-items: center;
-    }
-    div.datos {
-        display: grid;
-    }
-    div.datos2 {
-        justify-content: flex-start;
-    }
-    img.elementoInicio {
-        height: 20px;
-        width: 20px;
-        padding: 0;
-        margin-bottom: 5px;
-    }
-}
 .skills {
     display: flex;
     align-items: center;
@@ -294,4 +220,117 @@ footer {
     text-decoration: none;
     color: black;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: unset;
+        margin-top: 3%;
+    }
+    #boxGeneral {
+        height: fit-content;
+    }
+}   
+
+
+@media (max-width: 550px) {
+    body {
+        align-items: flex-start;
+    }
+
+    h1 {
+        display: flex;
+        margin-left: 10%;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    div.menu {
+        flex-direction: column;
+    }
+
+    img.fotoCV {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    div.inicio {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    div#box1Inicio {
+        margin: 0;
+    }
+
+    div#boxGeneral {
+        border: 0;
+        margin: 0;
+        width: 100%;
+        min-height: auto;
+    }
+
+    div#boxGeneralito {
+        margin: 0;
+    }
+
+    div#box2Inicio {
+        margin: 0;
+        padding: 0;
+    }
+
+    div#boxGeneralitoSobreMi {
+        display: grid;
+        margin: 0;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    div#boxGeneralitoContacto {
+        display: grid;
+    }
+
+    label,
+    div.datos input,
+    div.datos textarea,
+    div.datos2 input {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    div#box2 {
+        justify-items: center;
+    }
+
+    div.datos {
+        display: grid;
+    }
+
+    div.datos2 {
+        justify-content: flex-start;
+    }
+
+    img.elementoInicio {
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    #boxSobreMi1,
+    #boxSobreMi2,
+    #boxSobreMi3,
+    #boxSobreMi4 {
+        margin: 0;
+        max-width: none;
+    }
 }
