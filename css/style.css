@@ -67,6 +67,7 @@ div.menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: honeydew;
 }
 
 .elementoMenu:hover {
@@ -240,7 +241,6 @@ textarea {
     font-size: 18px;
     width: 250px;
     padding: 0 0 0 3px;
-    border: 0;
 }
 
 textarea {
