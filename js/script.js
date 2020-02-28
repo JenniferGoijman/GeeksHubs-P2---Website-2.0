@@ -24,22 +24,20 @@ const Inicio = `<div id="boxGeneralito">
                     <div id="box2Inicio">
                         <img src="../img/Foto CV.JPG" alt="Foto - JenniferGoijman" class="fotoCV">
                         </div>
-                    <br>
-                    <br>
                 </div>`;
 const SobreMi = `<div id="boxGeneralitoSobreMi">
                 <div id="boxSobreMi1">
                     <p>Me defino como una persona práctica, organizada y versátil. Me gusta trabajar en equipo, 
-                        adquirir nuevos conocimientos y desafiarme constantemente. </p><br>
+                        adquirir nuevos conocimientos y desafiarme constantemente. </p>
                 </div>
                 <div id="boxSobreMi2">
                     <p>Luego de terminar el <a href="https://www.ort.edu.ar/" id="edu">Bachillerato con orientación 
                     en Informática</a>, obtuve la <a href="http://www.uba.ar/" id="edu">Licenciatura en Psicología</a> 
-                    mientras me desenvolvía profesionalmente en el mundo IT.</p><br>
+                    mientras me desenvolvía profesionalmente en el mundo IT.</p>
                 </div>
                 <div id="boxSobreMi3">
                     <p>En el último año estuve trabajando en diferentes países de Europa en el área de servicio, lo que me
-                        permitió desarrollar mi flexibilidad, mejorar mi fluidez en inglés y motivarme a estudiar alemán. </p><br>
+                        permitió desarrollar mi flexibilidad, mejorar mi fluidez en inglés y motivarme a estudiar alemán. </p>
                 </div>
                 <div id="boxSobreMi4">
                     <p>Mi objetivo para el 2020 es reciclarme profesionalmente, es por ello que estoy realizando el Bootcamp

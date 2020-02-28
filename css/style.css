@@ -27,11 +27,13 @@ body {
 #boxGeneralito, #boxGeneralitoContacto {
     display: flex;
     justify-content: space-between; /*alinea foto*/
+    padding: 10px 0 0 10px;
 }
 
 p {
     max-width: 500px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 header {
@@ -49,6 +51,7 @@ nav {
     justify-content: center;
     background-color: rgb(56, 187, 106);
     min-height: 30px;
+    margin-bottom: 10px;
 }
 
 div.menu {
@@ -74,6 +77,7 @@ div.menu {
     text-align: center;
     margin: 0;
 }
+
 @media (max-width: 550px){
     body {
         align-items: flex-start;
@@ -81,10 +85,12 @@ div.menu {
     h1 {
         display: flex;
         margin-left: 10%;    
+        font-size: 30px;
     }
     nav {
         margin: 0;
         padding: 0;
+        font-size: 16px;
     }
     div.menu {
         flex-direction: column;
@@ -96,11 +102,18 @@ div.menu {
     }
     div.inicio {
         font-size: 13px;
+        margin: 0;
     }
     div#box1Inicio {
         width: auto;
         margin: 0;      
         
+    }
+    div#boxGeneral {
+        border: 0;
+        margin: 0;
+        width: 100;
+        min-height: auto;
     }
     div#boxGeneralito {
         margin: 0;
@@ -137,6 +150,7 @@ div.menu {
     }
     img.elementoInicio {
         height: 20px;
+        width: 20px;
         padding: 0;
         margin-bottom: 5px;
     }
@@ -184,7 +198,7 @@ div.menu {
 #boxSobreMi2,
 #boxSobreMi3,
 #boxSobreMi4 {
-    margin: 0 0 5px 0;
+    margin: 0;
     max-width: 300px;
 }
 
@@ -200,7 +214,8 @@ div.menu {
 }
 
 .elementoInicio {
-    height: 25px;
+    height: 30px;
+    width: 30px;
     padding: 5px 5px 0px 0;
     margin-bottom: 5px;
 }
@@ -220,8 +235,8 @@ textarea {
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 18px;
     width: 250px;
-    padding: 0px;
-    border: 0px;
+    padding: 0 0 0 3px;
+    border: 0;
 }
 
 textarea {
