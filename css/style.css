@@ -300,7 +300,7 @@ footer {
     }
 
     label,
-    div.datos input,
+    div.datos input,    
     div.datos textarea,
     div.datos2 input {
         font-size: 14px;

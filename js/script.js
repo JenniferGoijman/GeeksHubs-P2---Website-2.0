@@ -103,11 +103,18 @@ const clickAceptar = function () {
     contacto.mail = document.querySelector('.email').value;
     contacto.telefono = document.querySelector('.phone').value;
     contacto.mensaje = document.querySelector('.message').value;
-    console.log(contacto);
-    const contactos = localStorage.getItem('contactos') ? JSON.parse(localStorage.getItem('contactos')) : [];
-    contactos.push({ nombre:contacto.nombre, mail:contacto.mail, telefono:contacto.telefono, mensaje:contacto.mensaje })
-    localStorage.setItem('contactos', JSON.stringify(contactos))
-    alert("Hola " + contacto.nombre + "! Responderé tu mensaje a la brevedad.");
+    if (contacto.nombre!='' || contacto.mail!='' || contacto.telefono!='' || contacto.mensaje!='') {
+        console.log(contacto);
+        const contactos = localStorage.getItem('contactos') ? JSON.parse(localStorage.getItem('contactos')) : [];
+        contactos.push({ nombre:contacto.nombre, mail:contacto.mail, telefono:contacto.telefono, mensaje:contacto.mensaje })
+        localStorage.setItem('contactos', JSON.stringify(contactos))
+        alert("Hola " + contacto.nombre + "! Responderé tu mensaje a la brevedad.");
+        document.querySelector('.name').value = "";
+        document.querySelector('.email').value = "";
+        document.querySelector('.phone').value = "";
+        document.querySelector('.message').value = "";
+
+    } 
 }
 const main = document.querySelector('main');
 if (window.location.hash === '#sobremi') {
