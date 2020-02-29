@@ -116,16 +116,20 @@ const clickAceptar = function () {
 
     } 
 }
+
 const main = document.querySelector('main');
+$('.navbar-nav').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 if (window.location.hash === '#sobremi') {
-    main.innerHTML = SobreMi
+    main.innerHTML = SobreMi;
 } else if (window.location.hash === '#tecnologias') {
-    main.innerHTML = Tecnologias
+    main.innerHTML = Tecnologias;
 } else if (window.location.hash === '#contacto') {
     main.innerHTML = Contacto;
     document.getElementById('aceptar').addEventListener('click', clickAceptar);
 } else {
-    main.innerHTML = Inicio
+    main.innerHTML = Inicio;
 }
 
 document.querySelector('#botonInicio').addEventListener('click', () => {

@@ -28,7 +28,6 @@ body {
 #boxGeneralitoContacto {
     display: flex;
     justify-content: space-between;
-    /*alinea foto*/
     padding: 10px 0 0 10px;
 }
 
@@ -53,15 +52,9 @@ h1 {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
     background-color: rgb(56, 187, 106);
-    min-height: 30px;
-    margin-bottom: 10px;
-}
-
-div.menu {
-    display: flex;
+    max-height: 45px;
+    margin-bottom: 5px 0;
 }
 
 .elementoMenu {
@@ -75,6 +68,10 @@ div.menu {
 .elementoMenu:hover {
     border: 1px solid white;
     cursor: pointer;
+}
+
+a.navbar-brand {
+    color: honeydew;
 }
 
 #menu {
@@ -222,6 +219,14 @@ footer {
     margin: 0;
 }
 
+.navbar-nav {
+    transform: translateX(-1.5em);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='honeydew' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 @media (max-width: 768px) {
     body {
         align-items: unset;
@@ -230,10 +235,20 @@ footer {
     #boxGeneral {
         height: fit-content;
     }
+    #boxSobreMi1,
+    #boxSobreMi2,
+    #boxSobreMi3,
+    #boxSobreMi4 {
+        margin: 0;
+        max-width: none;
+    }
+    
+    p {
+        max-width: unset; 
+    }
 }   
 
-
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     body {
         align-items: flex-start;
     }
@@ -246,13 +261,15 @@ footer {
     }
 
     nav {
-        margin: 0;
-        padding: 0;
-        font-size: 17px;
+        margin: 5px 0;
+        font-size: 16px;
+        max-height: unset;        
     }
-
-    div.menu {
-        flex-direction: column;
+    
+    .nav-link.elementoMenu {
+        width: auto;
+        justify-content: flex-start;
+        padding-left: 10px;
     }
 
     img.fotoCV {
@@ -324,13 +341,5 @@ footer {
         width: 20px;
         padding: 0;
         margin-bottom: 5px;
-    }
-
-    #boxSobreMi1,
-    #boxSobreMi2,
-    #boxSobreMi3,
-    #boxSobreMi4 {
-        margin: 0;
-        max-width: none;
     }
 }
