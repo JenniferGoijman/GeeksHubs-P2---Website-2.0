@@ -67,6 +67,7 @@ const Tecnologias = `<div id="boxTecnologias">
                         <a href="https://jquery.com/" target="_blank"><img class="elementoSkillsV" src="../img/jquery.png" alt="Logo jQuery"></a>
                         <a href="https://www.typescriptlang.org/" target="_blank"><img class="elementoSkillsV" src="../img/typescript.png" alt="Logo TypeScript"></a>
                         <a href="https://nodejs.org/es/" target="_blank"><img class="elementoSkillsV" src="../img/nodejs.png" alt="Logo NodeJS"></a>
+                        <a href="https://getbootstrap.com/" target="_blank"><img class="elementoSkillsV" src="../img/bootstrap.png" alt="Logo Bootstrap"></a>
                         </div>
                         </div>`;
 const Contacto = `<div id="boxGeneralitoContacto">

@@ -55,6 +55,7 @@ nav {
     background-color: rgb(56, 187, 106);
     max-height: 45px;
     margin-bottom: 5px 0;
+    padding: 0;
 }
 
 .elementoMenu {
@@ -220,7 +221,7 @@ footer {
 }
 
 .navbar-nav {
-    transform: translateX(-1.5em);
+    transform: translateX(-2.5em);
 }
 
 .navbar-toggler-icon {
@@ -248,16 +249,24 @@ footer {
     }
 }   
 
+a.navbar-brand {
+    display: none;
+}
+
+nav.navbar.navbar-expand-sm {
+    padding: 0 !important;
+}
+
 @media (max-width: 600px) {
     body {
         align-items: flex-start;
     }
+    
+    a.navbar-brand {
+        display: initial;
+    }
 
     h1 {
-        /*display: flex;
-        margin-left: 10%;
-        font-size: 30px;
-        margin: 0;*/
         display: none;
     }
 
