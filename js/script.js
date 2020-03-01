@@ -38,8 +38,8 @@ const SobreMi = `<div id="boxGeneralitoSobreMi">
                         adquirir nuevos conocimientos y desafiarme constantemente. </p>
                 </div>
                 <div id="boxSobreMi2">
-                    <p>Luego de terminar el <a href="https://www.ort.edu.ar/" id="edu">Bachillerato con orientación 
-                    en Informática</a>, obtuve la <a href="http://www.uba.ar/" id="edu">Licenciatura en Psicología</a> 
+                    <p>Luego de terminar el <a href="https://www.ort.edu.ar/" target="_blank" id="edu">Bachillerato con orientación 
+                    en Informática</a>, obtuve la <a href="http://www.uba.ar/" target="_blank" id="edu">Licenciatura en Psicología</a> 
                     mientras me desenvolvía profesionalmente en el mundo IT.</p>
                 </div>
                 <div id="boxSobreMi3">
@@ -48,7 +48,7 @@ const SobreMi = `<div id="boxGeneralitoSobreMi">
                 </div>
                 <div id="boxSobreMi4">
                     <p>Mi objetivo para el 2020 es reciclarme profesionalmente, es por ello que estoy realizando el Bootcamp
-                        Full Stack Developer de GeeksHubs en Madrid. </p>
+                        Full Stack Developer de <a href="https://geekshubs.com/" target="_blank" id="edu">GeeksHubs</a> en Madrid. </p>
                 </div>
             </div>`;
 const Tecnologias = `<div id="boxTecnologias">
