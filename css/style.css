@@ -275,6 +275,7 @@ nav.navbar.navbar-expand-sm {
 
     a.navbar-brand {
         display: initial;
+        padding-left: 10px;
     }
 
     h1 {
@@ -290,7 +291,7 @@ nav.navbar.navbar-expand-sm {
     .nav-link.elementoMenu {
         width: auto;
         justify-content: flex-start;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     img.fotoCV {
