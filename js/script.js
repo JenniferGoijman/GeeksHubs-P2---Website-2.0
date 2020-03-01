@@ -118,10 +118,11 @@ const clickAceptar = function () {
     } 
 }
 
-const main = document.querySelector('main');
 $('.navbar-nav').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+const main = document.querySelector('main');
 if (window.location.hash === '#sobremi') {
     main.innerHTML = SobreMi;
 } else if (window.location.hash === '#tecnologias') {

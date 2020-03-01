@@ -54,7 +54,7 @@ h1 {
 nav {
     background-color: rgb(56, 187, 106);
     max-height: 45px;
-    margin-bottom: 5px 0;
+    margin-bottom: 5px;
     padding: 0;
 }
 
@@ -73,14 +73,6 @@ nav {
 
 a.navbar-brand {
     color: honeydew;
-}
-
-#menu {
-    text-decoration: none;
-    color: honeydew;
-    display: flex;
-    text-align: center;
-    margin: 0;
 }
 
 .skills {
@@ -129,6 +121,22 @@ a.navbar-brand {
 #boxSobreMi4 {
     margin: 0;
     max-width: 300px;
+}
+
+#boxSobreMi1 {
+    order: 1
+}
+
+#boxSobreMi2 {
+    order: 3
+}
+
+#boxSobreMi3 {
+    order: 2
+}
+
+#boxSobreMi4 {
+    order: 4
 }
 
 #box2Inicio {
@@ -228,27 +236,6 @@ footer {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='honeydew' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 768px) {
-    body {
-        align-items: unset;
-        margin-top: 3%;
-    }
-    #boxGeneral {
-        height: fit-content;
-    }
-    #boxSobreMi1,
-    #boxSobreMi2,
-    #boxSobreMi3,
-    #boxSobreMi4 {
-        margin: 0;
-        max-width: none;
-    }
-    
-    p {
-        max-width: unset; 
-    }
-}   
-
 a.navbar-brand {
     display: none;
 }
@@ -257,11 +244,35 @@ nav.navbar.navbar-expand-sm {
     padding: 0 !important;
 }
 
+
+@media (max-width: 768px) {
+    body {
+        align-items: unset;
+    }
+
+    #boxGeneral {
+        height: fit-content;
+    }
+
+    #boxSobreMi1,
+    #boxSobreMi2,
+    #boxSobreMi3,
+    #boxSobreMi4 {
+        margin: 0;
+        max-width: none;
+        order: unset;
+    }
+
+    p {
+        max-width: unset;
+    }
+}
+
 @media (max-width: 600px) {
     body {
         align-items: flex-start;
     }
-    
+
     a.navbar-brand {
         display: initial;
     }
@@ -271,15 +282,15 @@ nav.navbar.navbar-expand-sm {
     }
 
     nav {
-        margin: 5px 0;
+        margin: 0;
         font-size: 16px;
-        max-height: unset;        
+        max-height: unset;
     }
-    
+
     .nav-link.elementoMenu {
         width: auto;
         justify-content: flex-start;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     img.fotoCV {
@@ -297,6 +308,11 @@ nav.navbar.navbar-expand-sm {
         margin: 0;
     }
 
+    div#box2Inicio {
+        margin: 0;
+        padding: 0;
+    }
+    
     div#boxGeneral {
         border: 0;
         margin: 0;
@@ -306,11 +322,6 @@ nav.navbar.navbar-expand-sm {
 
     div#boxGeneralito {
         margin: 0;
-    }
-
-    div#box2Inicio {
-        margin: 0;
-        padding: 0;
     }
 
     div#boxGeneralitoSobreMi {
@@ -327,7 +338,7 @@ nav.navbar.navbar-expand-sm {
     }
 
     label,
-    div.datos input,    
+    div.datos input,
     div.datos textarea,
     div.datos2 input {
         font-size: 14px;
