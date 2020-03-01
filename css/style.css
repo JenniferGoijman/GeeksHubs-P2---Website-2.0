@@ -291,7 +291,7 @@ nav.navbar.navbar-expand-sm {
     .nav-link.elementoMenu {
         width: auto;
         justify-content: flex-start;
-        padding-left: 20px;
+        padding-left: 40px;
     }
 
     img.fotoCV {
