@@ -17,7 +17,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.menutitle{
+    flex:1
+}
 #boxGeneral {
     border: 1px solid rgb(177, 177, 177);
     width: 715px;
@@ -227,11 +229,17 @@ footer {
     color: black;
     margin: 0;
 }
-
-.navbar-nav {
-    transform: translateX(-2.5em);
+.navbar-collapse.collapse {
+    margin:unset
 }
-
+ul.navbar-nav {
+    margin:unset;
+    width: 100%;
+    justify-content: space-around;
+}
+li{
+    margin:unset;
+}
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='honeydew' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

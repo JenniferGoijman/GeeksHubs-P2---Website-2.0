@@ -117,7 +117,6 @@ const clickAceptar = function () {
 
     } 
 }
-
 $('.navbar-nav').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
